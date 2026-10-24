@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pharma Commercial Forecasting Analyst: Profile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2F6F8;--surface:#FFFFFF;--ink:#14213D;--muted:#52607A;--line:#D5DEE6;--accent:#0B7F82;--accent-ink:#FFFFFF;--warm:#C9791B;--chip:#E3EEF0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1A2B;--surface:#16243A;--ink:#E8EEF6;--muted:#9AABC4;--line:#2A3B55;--accent:#4FC3C6;--accent-ink:#0F1A2B;--warm:#F0B15A;--chip:#1E3350;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1A2B;--surface:#16243A;--ink:#E8EEF6;--muted:#9AABC4;--line:#2A3B55;--accent:#4FC3C6;--accent-ink:#0F1A2B;--warm:#F0B15A;--chip:#1E3350;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 Manrope,system-ui,sans-serif}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+nav{display:flex;gap:4px 18px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover{color:var(--ink)}
+nav a[aria-current="page"]{color:var(--ink);border-color:var(--accent)}
+button{font:inherit;cursor:pointer}
+.ghost{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 12px;font-size:14px}
+h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+h1{font-size:clamp(36px,6vw,58px);letter-spacing:-.01em}
+h2{font-size:28px;margin:32px 0 14px}
+h3{font-size:20px}
+main{padding:28px 0 20px;min-height:60vh}
+main:focus{outline:none}
+.role{color:var(--muted);margin:12px 0 20px;font-size:18px;max-width:60ch}
+.hero{padding:24px 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.chip{background:var(--chip);border-radius:999px;padding:3px 11px;font-size:13px;text-decoration:none;color:var(--ink)}
+.chip.brand{border:1px solid var(--warm)}
+a.chip:hover{background:var(--accent);color:var(--accent-ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;color:var(--ink);text-decoration:none;display:block}
+a.card:hover{border-color:var(--accent)}
+.card .org{color:var(--muted);font-size:14px;margin:2px 0 8px}
+.card p{margin:6px 0}
+.card ul,.plain{margin:8px 0;padding-left:18px}
+.card li,.plain li{margin:5px 0}
+.more{color:var(--accent);font-size:14px;font-weight:500}
+.tl{display:grid;gap:16px;border-left:2px solid var(--line);padding-left:22px}
+.tl .card{position:relative}
+.tl .card::before{content:"";position:absolute;left:-30px;top:26px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.skillgroup{margin-bottom:12px}
+.skillgroup h3{font-size:16px;font-family:Manrope,sans-serif;font-weight:700}
+.lead{max-width:68ch}
+.back{display:inline-block;margin-bottom:16px;font-size:14px}
+.detail{max-width:72ch}
+.detail ul{padding-left:20px}.detail li{margin:10px 0}
+.pn{display:flex;justify-content:space-between;gap:12px;margin-top:28px;font-size:14px;flex-wrap:wrap}
+footer{padding:20px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><nav id="nav" aria-label="Pages"></nav><button class="ghost" id="theme" type="button">Switch theme</button></header>
+<main id="main" tabindex="-1"></main>
+<footer id="foot"></footer>
+</div>
+
+<script>
+/* ============ EDIT HERE: all content lives in PROFILE ============
+   Add an item: push an object into an existing array.
+   Items may use: id, title, org, team, period, text, bullets[], tags[].
+   Items in "experience" with an id get their own detail page.
+   Add a page or section: add a data array under a new key, then add it
+   to a page's "parts" in PAGES below (or add a new page there). */
+const PROFILE = {
+  name: "Najib Shaikh",
+  headline: "Analyst | Commercial Forecasting | Pharma Consulting | Commercial Analytics",
+  links: [{ label: "LinkedIn", url: "https://www.linkedin.com/in/najib-shaikh" }, { label: "najibsk456@gmail.com", url: "mailto:najibsk456@gmail.com" }],
+  brands: ["Tagrisso", "EvoPAR", "Repatha", "Imdelltra"],
+  about: [
+    "I am a Pharmaceutical Commercial Forecasting Analyst at PharmaACE with experience supporting global pharmaceutical clients (AstraZeneca, Amgen) through forecasting, commercial analytics, and strategic decision-making.",
+    "Over the past year, I have worked on end-to-end forecasting models, owning activities from model onboarding and model management to client communication, reporting, and dashboard development.",
+    "My experience includes supporting global brands such as Tagrisso, EvoPAR, Repatha, and Imdelltra and developing Power BI dashboards for commercial insights.",
+    "I am passionate about commercial strategy, pharmaceutical forecasting, AI-enabled analytics, and helping life sciences organizations make better business decisions through data. Always open to meaningful conversations and collaboration within the pharma and healthcare ecosystem.",
+    "Results-driven pharmaceutical analyst with experience in commercial forecasting, pharmaceutical analytics, and client consulting for global life sciences organizations. Experienced in managing end-to-end forecasting models, commercial reporting, and business intelligence dashboards across oncology, cardiovascular, and hematology portfolios."
+  ],
+  skills: [
+    { group: "Commercial and consulting", items: ["Commercial Forecasting","Pharmaceutical Analytics","Business Intelligence","Market Assessment","Forecast Modeling","Client Communication","Data Storytelling"] },
+    { group: "Analytics and tools", items: ["Power BI","MS Excel","PowerPoint","SQL","Python","ForecastACE","PACEBI"] },
+    { group: "Research and clinical data", items: ["Competitive Intelligence","Report Writing","Clinical Data Management","Statistical Analysis"] }
+  ],
+  experience: [
+    { id: "pharmaace", title: "Analyst", org: "PharmaACE", team: "Commercial forecasting", period: "June 2025 – Present",
+      bullets: [
+        "Managed end-to-end commercial forecasting for AstraZeneca oncology brands (Tagrisso and EvoPAR), including model onboarding, forecasting updates, quality assurance, client communication, and reporting.",
+        "Supported commercial forecasting for Amgen brands (Repatha and Imdelltra) by implementing ForecastACE enhancements and delivering customized forecasting solutions aligned with client requirements.",
+        "Built, maintained, and validated commercial forecasting models using ForecastACE to support strategic commercial planning.",
+        "Developed executive-ready PowerPoint presentations and interactive BI dashboards to communicate forecasting insights and business performance.",
+        "Collaborated with global consulting teams to deliver forecasting engagements within project timelines while maintaining data quality and model accuracy.",
+        "Supported forecasting across oncology, cardiovascular, and hematology therapeutic areas."],
+      tags: ["ForecastACE","Power BI","PowerPoint","Tagrisso","EvoPAR","Repatha","Imdelltra","Oncology","Cardiovascular","Hematology"] },
+    { id: "healthark", title: "Intern Consultant", org: "Healthark", team: "Analytics Team", period: "July 2024 – August 2024",
+      bullets: [
+        "Gained hands-on experience in clinical data management and analysis, reviewing and validating clinical trial data, resolving data queries, and supporting data quality for observational clinical studies.",
+        "Worked with the ClinVigilant portal and DBDS reports to ensure accurate data management.",
+        "Automated clinical data review using Python, reducing manual effort and improving efficiency.",
+        "Performed statistical analysis, including the Mann-Whitney U test, to identify trends in clinical data and contribute to accurate clinical data reporting.",
+        "Strengthened communication skills by collaborating with clients, clinical teams, and data reviewers to ensure data accuracy."],
+      tags: ["Python","ClinVigilant","DBDS reports","Mann-Whitney U test","Clinical data management"] },
+    { id: "insights10", title: "Trainee Research Analyst", org: "Insights10", team: "Market Research Team", period: "June 2024 – July 2024",
+      bullets: [
+        "Conducted in-depth pharmaceutical market research and competitive intelligence across multiple therapeutic areas, contributing to multiple market research reports.",
+        "Prepared over 110 featured and sample market reports, delivering actionable insights for healthcare clients.",
+        "Developed skills in data analysis, report writing, and competitive intelligence.",
+        "Extracted insights from diverse sources to provide actionable intelligence for strategic decision-making.",
+        "Assisted in competitive analysis, gaining a deeper understanding of industry trends, competitor strategies, and market dynamics."],
+      tags: ["Market research","Competitive analysis","Report writing","Data analysis"] },
+    { id: "piramal", title: "Industrial Trainee", org: "Piramal Pharma Solutions", period: "December 2021 – January 2022",
+      bullets: ["Completed 150 hours of industrial training, gained exposure, and interacted with different departments to understand operations and cross-functional processes."],
+      tags: ["Pharma operations"] },
+    { id: "wellness", title: "Pharmacist", org: "Wellness Forever Medicare Private Limited", period: "February 2021 – March 2021",
+      bullets: ["Provided patient counseling, and ensured accurate dispensing of pharmaceuticals while delivering exceptional customer service."],
+      tags: ["Patient counseling"] }
+  ],
+  projects: [
+    { title: "AstraZeneca: Oncology portfolio", org: "Client engagement",
+      text: "Managed end-to-end commercial forecasting support for Tagrisso and EvoPAR, including model onboarding, forecasting updates, client communication, and reporting.",
+      tags: ["Tagrisso","EvoPAR","Oncology"] },
+    { title: "Amgen: Commercial forecasting", org: "Client engagement",
+      text: "Supported commercial forecasting for Repatha (TRx-based model) and Imdelltra (patient-based OBU model) through ForecastACE enhancements, model maintenance, and client deliverables.",
+      tags: ["Repatha","Imdelltra","TRx-based model","Patient-based OBU model"] },
+    { title: "Market assessment: Squamous cell carcinoma", org: "Project",
+      text: "Conducted market assessment covering disease overview, epidemiology, treatment landscape, competitive environment, and market opportunity.",
+      tags: ["Market assessment","Oncology"] },
+    { title: "Company profile: CSL Behring", org: "Project",
+      text: "Prepared a comprehensive company profile including product portfolio, therapeutic focus, pipeline, financial performance, and strategic positioning.",
+      tags: ["Company profiling"] },
+    { title: "Adoption of 5G Technology in India", org: "Field posting seminar project",
+      text: "Studied awareness and perception of 5G technology in India.", tags: ["Survey research"] },
+    { title: "Microencapsulation of fish oil", org: "Final year B.Pharm project",
+      text: "Microencapsulation of fish oil by coacervation method and its evaluation.", tags: ["Formulation research"] }
+  ],
+  education: [
+    { title: "MBA (Pharmaceutical Management)", org: "National Institute of Pharmaceutical Education and Research (NIPER), Ahmedabad", period: "2023–2025" },
+    { title: "Bachelor of Pharmacy (B.Pharm)", org: "Government College of Pharmacy, Ratnagiri", period: "2019–2023" }
+  ],
+  certifications: [
+    { title: "Excel Skills for Business" },
+    { title: "Six Sigma White Belt Certification" },
+    { title: "TCS iON Career Edge Young Professional", org: "Tata Consultancy Services" },
+    { title: "Maharashtra State Certificate in Information Technology", org: "Maharashtra Knowledge Corporation Limited" }
+  ],
+  activities: [
+    { title: "Regional finalist, 27th Student Management Games", org: "IBS Ahmedabad, hosted by AIMA", period: "Jan 2024" },
+    { title: "Participant, Brand Chat Study Survey", org: "World Pharma Brand Manager Week 2024", period: "Jan 2024" },
+    { title: "Participant, Consult School 2.0", org: "IIT Madras", period: "Oct 2023" },
+    { title: "Volunteer, Covid Vaccination Drive", period: "Jun 2021" },
+    { title: "Poster presenter, Drug Abuse", org: "Inter-college level", period: "Feb 2021" }
+  ]
+};
+/* type: about | skills | timeline | cards | list. detail:true links items that have an id to a detail page. */
+const PAGES = [
+  { id: "about", title: "About and skills", blurb: "Background, focus areas, and tools.",
+    parts: [{ key: "about", type: "about" }, { key: "skills", title: "Skills", type: "skills" }] },
+  { id: "experience", title: "Experience", blurb: "Roles in forecasting, research, and clinical data.",
+    parts: [{ key: "experience", type: "timeline", detail: true }] },
+  { id: "projects", title: "Projects", blurb: "Client engagements, assessments, and academic work.",
+    parts: [{ key: "projects", type: "cards" }] },
+  { id: "education", title: "Education and certifications", blurb: "Degrees and credentials.",
+    parts: [{ key: "education", title: "Education", type: "list" }, { key: "certifications", title: "Certifications", type: "list" }] },
+  { id: "activities", title: "Activities", blurb: "Competitions, programs, and volunteering.",
+    parts: [{ key: "activities", type: "list" }] }
+];
+/* ====================== rendering code below ====================== */
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const meta = i => [i.team, i.org, i.period].filter(Boolean).map(esc).join(", ");
+const chips = (a, cls = "") => (a && a.length) ? `<div class="chips">${a.map(t => `<span class="chip ${cls}">${esc(t)}</span>`).join("")}</div>` : "";
+
+function card(i, detailKey) {
+  const bl = i.bullets || [], link = detailKey && i.id;
+  const inner = `<h3>${esc(i.title)}</h3><div class="org">${meta(i)}</div>` + (i.text ? `<p>${esc(i.text)}</p>` : "") +
+    (bl.length ? `<ul>${bl.slice(0, 2).map(b => `<li>${esc(b)}</li>`).join("")}</ul>` : "") + chips(i.tags) +
+    (link ? `<span class="more">View full details (${bl.length} points)</span>` : "");
+  return link ? `<a class="card" href="#${detailKey}-${esc(i.id)}">${inner}</a>` : `<article class="card">${inner}</article>`;
+}
+const renderers = {
+  about: (d) => `<div class="lead">${d.map(p => `<p>${esc(p)}</p>`).join("")}</div>`,
+  skills: (d) => d.map(g => `<div class="skillgroup"><h3>${esc(g.group)}</h3>${chips(g.items)}</div>`).join(""),
+  timeline: (d, p) => `<div class="tl">${d.map(i => card(i, p.detail && p.key)).join("")}</div>`,
+  cards: (d, p) => `<div class="grid">${d.map(i => card(i, p.detail && p.key)).join("")}</div>`,
+  list: (d) => `<ul class="plain">${d.map(i => `<li><strong>${esc(i.title)}</strong>${meta(i) ? ", " + meta(i) : ""}</li>`).join("")}</ul>`
+};
+const parts = pg => pg.parts.filter(p => PROFILE[p.key] && PROFILE[p.key].length);
+
+function home() {
+  const exp = PROFILE.experience || [];
+  return `<section class="hero"><h1>${esc(PROFILE.name)}</h1><p class="role">${esc(PROFILE.headline)}</p>
+    <p class="lead">${esc(PROFILE.about[0])}</p>
+    ${PROFILE.brands.length ? `<p style="margin:16px 0 0;color:var(--muted);font-size:14px">Brands supported</p>${chips(PROFILE.brands, "brand")}` : ""}
+    <div class="chips">${(PROFILE.links || []).map(l => `<a class="chip" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("")}</div></section>
+    <h2>Explore</h2><div class="grid">${PAGES.filter(pg => parts(pg).length).map(pg => `<a class="card" href="#${pg.id}"><h3>${esc(pg.title)}</h3><p>${esc(pg.blurb)}</p></a>`).join("")}</div>
+    ${exp.length ? `<h2>Roles</h2><ul class="plain">${exp.map(i => `<li><a href="#experience-${esc(i.id)}">${esc(i.title)}, ${esc(i.org)}</a></li>`).join("")}</ul>` : ""}`;
+}
+function route(tok) {
+  let t = (typeof tok === "string" ? tok : location.hash.slice(1)).replace(/^[\/!#]+/, "");
+  try { t = decodeURIComponent(t); } catch (e) {}
+  t = t || "home";
+  let html = "", title = PROFILE.name, cur = t;
+  const pg = PAGES.find(p => p.id === t);
+  const det = PAGES.flatMap(p => p.parts.filter(x => x.detail).map(x => ({ page: p, key: x.key })))
+    .map(d => ({ d, item: (PROFILE[d.key] || []).find(i => i.id && t === d.key + "-" + i.id) })).find(x => x.item);
+  if (t === "home") { html = home(); title = PROFILE.name + ": " + PROFILE.headline.split("|")[0].trim(); }
+  else if (pg && parts(pg).length) {
+    title = pg.title + " | " + PROFILE.name;
+    html = `<h1 style="font-size:40px">${esc(pg.title)}</h1>` + parts(pg).map(p => (p.title ? `<h2>${esc(p.title)}</h2>` : "") + renderers[p.type](PROFILE[p.key], p)).join("");
+  } else if (det) {
+    const { item, d } = det, list = PROFILE[d.key], n = list.indexOf(item), prev = list[n - 1], next = list[n + 1];
+    cur = d.page.id; title = item.title + ", " + item.org + " | " + PROFILE.name;
+    html = `<div class="detail"><a class="back" href="#${d.page.id}">Back to ${esc(d.page.title)}</a><h1 style="font-size:40px">${esc(item.title)}</h1>
+      <p class="role" style="margin:8px 0 16px">${meta(item)}</p><ul>${(item.bullets || []).map(b => `<li>${esc(b)}</li>`).join("")}</ul>
+      ${item.tags && item.tags.length ? `<h2 style="font-size:20px">Tools, brands, and focus areas</h2>${chips(item.tags)}` : ""}
+      <div class="pn"><span>${prev ? `<a href="#${d.key}-${esc(prev.id)}">Previous: ${esc(prev.org)}</a>` : ""}</span><span>${next ? `<a href="#${d.key}-${esc(next.id)}">Next: ${esc(next.org)}</a>` : ""}</span></div></div>`;
+  } else { cur = "home"; title = PROFILE.name; html = home(); }
+  $("#main").innerHTML = html; document.title = title;
+  $("#nav").innerHTML = [{ id: "home", title: "Home" }, ...PAGES.filter(p => parts(p).length)].map(p => `<a href="#${p.id}"${p.id === cur ? ' aria-current="page"' : ""}>${esc(p.title)}</a>`).join("");
+  window.scrollTo(0, 0); $("#main").focus({ preventScroll: true });
+}
+$("#foot").textContent = PROFILE.name + ". Content lives in one data block and is rendered by this page.";
+document.addEventListener("click", e => {
+  const a = e.target.closest('a[href^="#"]');
+  if (!a) return;
+  e.preventDefault();
+  const tok = a.getAttribute("href").slice(1);
+  try { history.replaceState(null, "", "#" + tok); } catch (x) {}
+  route(tok);
+});
+addEventListener("hashchange", () => route());
+const root = document.documentElement;
+$("#theme").onclick = () => {
+  const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme:dark)").matches;
+  root.dataset.theme = dark ? "light" : "dark";
+};
+route();
+</script>
+</body>
+</html>
